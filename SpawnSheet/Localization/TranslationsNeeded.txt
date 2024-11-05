@@ -1,0 +1,9 @@
+en-US, 135/135, 100%, missing 0
+de-DE, 0/135, 0%, missing 135
+it-IT, 0/135, 0%, missing 135
+fr-FR, 0/135, 0%, missing 135
+es-ES, 0/135, 0%, missing 135
+ru-RU, 0/135, 0%, missing 135
+zh-Hans, 0/135, 0%, missing 135
+pt-BR, 0/135, 0%, missing 135
+pl-PL, 0/135, 0%, missing 135

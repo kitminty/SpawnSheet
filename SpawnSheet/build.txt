@@ -1,0 +1,6 @@
+author = Kittyelectro
+version = 0.7.6
+displayName = Spawn Sheet
+homepage = https://google.com
+buildIgnore = .vs\*, Properties\*, *.csproj, *.user, obj\*, bin\*, *.config, .git\*
+hideCode = false
