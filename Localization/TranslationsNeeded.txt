@@ -1,0 +1,9 @@
+en-US, 130/130, 100%, missing 0
+de-DE, 99/130, 76%, missing 31
+it-IT, 101/130, 78%, missing 29
+fr-FR, 99/130, 76%, missing 31
+es-ES, 102/130, 78%, missing 28
+ru-RU, 115/130, 88%, missing 15
+zh-Hans, 109/130, 84%, missing 21
+pt-BR, 94/130, 72%, missing 36
+pl-PL, 0/130, 0%, missing 130

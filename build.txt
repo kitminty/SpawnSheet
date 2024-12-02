@@ -1,0 +1,5 @@
+﻿author = jopojelly, jofairden, rrryutaro, kitminty
+version = 0.9
+displayName = Spawn Sheet
+buildIgnore = .vs\*, Properties\*, *.csproj, *.user, obj\*, bin\*, *.config, .git\*
+hideCode = false
