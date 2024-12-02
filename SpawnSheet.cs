@@ -416,49 +416,19 @@ namespace SpawnSheet
 					int npcType = reader.ReadInt32();
 					int netID = reader.ReadInt32();
 					NPCSlot.HandleNPC(npcType, netID, true, whoAmI);
-					key = "Mods.SpawnSheet.MobBrowser.SpawnNPCNotification";
-					ChatHelper.BroadcastChatMessage(NetworkText.FromKey(key, netID, Netplay.Clients[whoAmI].Name), Color.Azure);
-					//message = "Spawned " + netID + " by " + Netplay.Clients[whoAmI].Name;
-					//NetMessage.SendData(25, -1, -1, message, 255, Color.Azure.R, Color.Azure.G, Color.Azure.B, 0);
 					break;
 
 				case SpawnSheetMessageType.QuickClear:
 					int clearType = reader.ReadInt32();
-					switch (clearType) {
-						case 0:
-							key = "Mods.SpawnSheet.QuickClear.ItemClearNotification";
-							//message = "Items were cleared by ";
-							break;
-
-						case 1:
-							key = "Mods.SpawnSheet.QuickClear.ProjectileClearNotification";
-							//message = "Projectiles were cleared by ";
-							break;
-
-						default:
-							key = "";
-							break;
-					}
-					//message += Netplay.Clients[whoAmI].Name;
 					QuickClearHotbar.HandleQuickClear(clearType, true, whoAmI);
-					ChatHelper.BroadcastChatMessage(NetworkText.FromKey(key, Netplay.Clients[whoAmI].Name), Color.Azure);
-					//NetMessage.SendData(25, -1, -1, message, 255, Color.Azure.R, Color.Azure.G, Color.Azure.B, 0);
 					break;
 
 				case SpawnSheetMessageType.VacuumItems:
 					Hotbar.HandleVacuum(true, whoAmI);
-					key = "Mods.SpawnSheet.Vacuum.VacuumNotification";
-					ChatHelper.BroadcastChatMessage(NetworkText.FromKey(key, Netplay.Clients[whoAmI].Name), Color.Azure);
-					//message = "Items on the ground were vacuumed by " + Netplay.Clients[whoAmI].Name;
-					//NetMessage.SendData(25, -1, -1, message, 255, Color.Azure.R, Color.Azure.G, Color.Azure.B, 0);
 					break;
 
 				case SpawnSheetMessageType.ButcherNPCs:
 					NPCButchererHotbar.HandleButcher(reader.ReadInt32(), true);
-					key = "Mods.SpawnSheet.Butcherer.ButcherNotification";
-					ChatHelper.BroadcastChatMessage(NetworkText.FromKey(key, Netplay.Clients[whoAmI].Name), Color.Azure);
-					//message = "NPCs were butchered by " + Netplay.Clients[whoAmI].Name;
-					//NetMessage.SendData(25, -1, -1, message, 255, Color.Azure.R, Color.Azure.G, Color.Azure.B, 0);
 					break;
 
 				case SpawnSheetMessageType.TeleportPlayer:

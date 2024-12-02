@@ -63,7 +63,7 @@ namespace SpawnSheet.Menus
 			currentBoost = boosts[currentBoostIndex];
 			if (!Main.dedServ) {
 				button.Tooltip = CSText("MinionSlotBoosterNew") + " " + boostStrings[currentBoostIndex];
-				Main.NewText(CSText("MinionSlotBoosterText") + " " + boostStrings[currentBoostIndex]);
+				//Main.NewText(CSText("MinionSlotBoosterText") + " " + boostStrings[currentBoostIndex]);
 			}
 		}
 
